@@ -15,7 +15,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
             optionsBuilder.UseSqlServer(connectionString: @"Server=KEGM_HARITA;Database=Northwind;Trusted_Connection=true");
         }
 
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; } //Veri tabanı tablosuyla bağlantı kuruldu.
 
     }
 }
