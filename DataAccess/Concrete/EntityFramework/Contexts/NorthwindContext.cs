@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString: @"Server=KEGM_HARITA;Database=Northwind;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(connectionString: @"Server=MIRANPC\SQLEXPRESS;Database=Northwind;Trusted_Connection=true");
         }
 
         public DbSet<Product> Products { get; set; } //Veri tabanı tablosuyla bağlantı kuruldu.
