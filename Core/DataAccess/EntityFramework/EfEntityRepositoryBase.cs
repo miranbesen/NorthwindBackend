@@ -35,14 +35,14 @@ namespace Core.DataAccess.EntityFramework
 
         public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {
-            using (var dbContext = new TContext()) //using bir disposable pattern 
+            using (var dbContext = new TContext()) //using one disposable pattern 
             {
                 return dbContext.Set<TEntity>().SingleOrDefault(filter);
             }
         }
         public IList<TEntity> GetList(Expression<Func<TEntity, bool>> filter = null)
         {
-            using (var dbContext = new TContext()) //using bir disposable pattern 
+            using (var dbContext = new TContext()) //using one disposable pattern 
             {
                 return filter == null
                     ? dbContext.Set<TEntity>().ToList()

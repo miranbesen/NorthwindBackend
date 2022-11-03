@@ -11,5 +11,8 @@ namespace Business.Contant
         public static string ProductAdded = "Product add is successful";
         public static string ProductDeleted = "Product delete is successful";
         public static string ProductUpdated = "Product update is successful";
+        public static string CategorieAdded = "Categorie add is successful";
+        public static string CategorieDeleted = "Categorie delete is successful";
+        public static string CategorieUpdated = "Categorie update is successful";
     }
 }

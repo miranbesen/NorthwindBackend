@@ -15,7 +15,8 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
             optionsBuilder.UseSqlServer(connectionString: @"Server=MIRANPC\SQLEXPRESS;Database=Northwind;Trusted_Connection=true");
         }
 
-        public DbSet<Product> Products { get; set; } //Veri tabanı tablosuyla bağlantı kuruldu.
+        public DbSet<Product> Products { get; set; } //Veri tabanı tablosuyla bağlantı kuruldu
+        public DbSet<Categorie> Categories { get; set; }
 
     }
 }
