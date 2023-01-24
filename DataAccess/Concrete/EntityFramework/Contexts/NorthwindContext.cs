@@ -17,6 +17,9 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
 
         public DbSet<Product> Products { get; set; } //Veri tabanı tablosuyla bağlantı kuruldu
         public DbSet<Categorie> Categories { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<OperationClaim> OperationsClaims { get; set; }
+        public DbSet<UserOperationClaim> UserOperationsClaims { get; set; }
 
     }
 }
